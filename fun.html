@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Zone</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">My Profile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="fun.html">Fun</a></li>
+          <li class="nav-item"><a class="nav-link" href="smart.html">Smart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fun Section -->
+  <div class="container mt-5">
+    <h2>Welcome to the Fun Page</h2>
+
+    <!-- Toggle Box -->
+    <button class="btn btn-warning my-3" id="toggleBoxBtn">Toggle Box</button>
+    <div id="funBox" class="p-3 bg-light border" style="display: none;">
+      🎉 Surprise! You discovered the hidden fun box.
+    </div>
+
+    <!-- Fade Image -->
+    <div class="text-center mt-4">
+      <img id="funImage" src="images/fun.jpg" alt="Fun Image" class="img-fluid" style="width: 300px;" />
+      <br>
+      <button class="btn btn-info mt-2" id="fadeBtn">Fade In / Out Image</button>
+    </div>
+
+    <!-- AJAX Content -->
+    <div class="mt-5">
+      <button class="btn btn-success" id="loadQuoteBtn">Load Quote</button>
+      <div id="quoteContainer" class="mt-3 p-3 border border-secondary"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

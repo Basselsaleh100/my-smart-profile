@@ -1,0 +1,45 @@
+/* Adjust arrow size */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+/* Control overall arrow position */
+.carousel-control-prev.custom-arrow,
+.carousel-control-next.custom-arrow {
+  top: 90%;          /* move up/down: 0% top, 50% center, 100% bottom */
+  transform: translateY(-50%); /* center vertically relative to top */
+}
+
+/* Horizontal position (optional override) */
+.carousel-control-prev.custom-arrow {
+  left: 4%;  /* move closer or farther from the left */
+}
+
+.carousel-control-next.custom-arrow {
+  right: 4%; /* move closer or farther from the right */
+}
+
+/* Light and Dark Modes */
+body.light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+ 
+  body.light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
