@@ -9,7 +9,7 @@
 /* Control overall arrow position */
 .carousel-control-prev.custom-arrow,
 .carousel-control-next.custom-arrow {
-  top: 90%;          /* move up/down: 0% top, 50% center, 100% bottom */
+  top: 130%;          /* move up/down: 0% top, 50% center, 100% bottom */
   transform: translateY(-50%); /* center vertically relative to top */
 }
 
